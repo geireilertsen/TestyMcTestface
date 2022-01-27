@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestyMcTestFace</string>
+    <string name="name_label">Name</string>
+    <string name="password_label">Password</string>
+    <string name="login_label">Log in</string>
+    <string name="login_message">Logging in...</string>
+    <string name="notRegisteredText">Not registered?</string>
+    <string name="registerHereText">Register here</string>
+</resources>

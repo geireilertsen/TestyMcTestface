@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestyMcTestTryne</string>
+    <string name="name_label">Navn</string>
+    <string name="password_label">Passord</string>
+    <string name="login_label">Logg inn</string>
+    <string name="login_message">Logger inn...</string>
+    <string name="notRegisteredText">Ikke registrert?</string>
+    <string name="registerHereText">Registrer her</string>
+</resources>
