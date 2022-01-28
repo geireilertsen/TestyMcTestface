@@ -16,8 +16,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
-    
-    //TEST PULL!!!!!!!
 
     private TextInputLayout nameInputLayout, passwordErrorInputLayout;
     private TextInputEditText nameEditText, passwordEditText;
