@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, nameInput + " " + passwordInput, Toast.LENGTH_SHORT).show();
             closeKeyboard();
         }
+
+        else{
+            Toast.makeText(this, R.string.login_failed_text, Toast.LENGTH_SHORT).show();
+            closeKeyboard();
+        }
     }
 
     public void registerHereTextViewClicked(View view) {

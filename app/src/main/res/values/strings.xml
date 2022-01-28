@@ -8,4 +8,6 @@
     <string name="notRegisteredText">Ikke registrert?</string>
     <string name="registerHereText">Registrer her</string>
     <string name="backBtnText">Tilbake</string>
+    <string name="login_failed_text">FEIL!!!</string>
+
 </resources>

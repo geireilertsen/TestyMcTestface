@@ -8,5 +8,6 @@
     <string name="notRegisteredText">Not registered?</string>
     <string name="registerHereText">Register here</string>
     <string name="backBtnText">Back</string>
+    <string name="login_failed_text">FAIL!!!</string>
 
 </resources>
