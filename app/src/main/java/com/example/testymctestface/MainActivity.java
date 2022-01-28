@@ -59,4 +59,8 @@ public class MainActivity extends AppCompatActivity {
             manager.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
+    private boolean checkInput(){
+        return false;
+    }
 }
