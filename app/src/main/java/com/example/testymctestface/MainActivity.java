@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginButtonClicked(View view) {
-        //progressDialog.setMessage(getString(R.string.login_message));
-        //progressDialog.show();
-        String nameInput = nameEditText.getText().toString().trim();;
+        String nameInput = nameEditText.getText().toString().trim();
         String passwordInput = passwordEditText.getText().toString().trim();
-        Toast.makeText(this, nameInput + " " + passwordInput, Toast.LENGTH_SHORT).show();
-        closeKeyboard();
+        if(checkInput(nameInput, passwordInput)){
+            Toast.makeText(this, nameInput + " " + passwordInput, Toast.LENGTH_SHORT).show();
+            closeKeyboard();
+        }
     }
 
     public void registerHereTextViewClicked(View view) {
@@ -58,5 +58,9 @@ public class MainActivity extends AppCompatActivity {
         if (view != null) { InputMethodManager manager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             manager.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
+    }
+
+    private boolean checkInput(String name, String password){
+        return name.length() > 0 && password.length() > 0;
     }
 }
