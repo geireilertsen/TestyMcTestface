@@ -7,4 +7,6 @@
     <string name="login_message">Logger inn...</string>
     <string name="notRegisteredText">Ikke registrert?</string>
     <string name="registerHereText">Registrer her</string>
+    <string name="backBtnText">Tilbake</string>
+
 </resources>
