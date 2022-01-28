@@ -16,8 +16,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
-    
-    //TEST PULL!!!!!!!
 
     private TextInputLayout nameInputLayout, passwordErrorInputLayout;
     private TextInputEditText nameEditText, passwordEditText;
@@ -39,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginButtonClicked(View view) {
-        //progressDialog.setMessage(getString(R.string.login_message));
-        //progressDialog.show();
-        String nameInput = nameEditText.getText().toString().trim();;
+        String nameInput = nameEditText.getText().toString().trim();
         String passwordInput = passwordEditText.getText().toString().trim();
-        Toast.makeText(this, nameInput + " " + passwordInput, Toast.LENGTH_SHORT).show();
-        closeKeyboard();
+        if(checkInput(nameInput, passwordInput)){
+            Toast.makeText(this, nameInput + " " + passwordInput, Toast.LENGTH_SHORT).show();
+            closeKeyboard();
+        }
     }
 
     public void registerHereTextViewClicked(View view) {
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private boolean checkInput(){
-        return false;
+    private boolean checkInput(String name, String password){
+        return name.length() > 0 && password.length() > 0;
     }
 }
